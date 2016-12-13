@@ -122,7 +122,7 @@ int main(void)
 
 
 		VOL vol;
-		printf("%s Je lis le vol.....  ", nom);
+		printf("%s Je lis le vol....  ", nom);
 		while(read(descpipe[0],&vol,sizeof(VOL))){
 			printf("%s Destination : %s || Nombre de place(s) : %d \n", nom, vol.dest, vol.nb_places);
 		}
